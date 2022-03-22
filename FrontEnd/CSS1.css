@@ -1,0 +1,25 @@
+body {
+  background-image: url(./Asset/image/istockphoto-1215880423-1024x1024.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.test {
+  width: 100%;
+  text-align: center;
+}
+tr:nth-child(even) {
+  color: rgb(237, 162, 100);
+  background-color: rgb(255, 248, 220);
+}
+tr:nth-child(odd) {
+  color: rgb(214, 100, 237);
+  background-color: rgb(245, 255, 220);
+}
+.test:hover {
+  background-color: deeppink;
+}
+.demo {
+  margin: 15px 15px;
+  width: 100%;
+  width: 50%;
+}
