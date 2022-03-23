@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .test1 {
+        white-space: nowrap;
+        width: 150px;
+        border: 2px solid blue;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+      .test2 {
+        white-space: nowrap;
+        width: 150px;
+        border: 2px solid blue;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .test3 {
+        white-space: nowrap;
+        width: 150px;
+        border: 2px solid blue;
+        overflow: visible;
+        text-overflow: ellipsis;
+      }
+      .test2:hover{
+          overflow:visible;
+          width:120px;
+          border: 2px solid red;
+
+      }
+      .test4{
+          position: sticky;
+          left: 120px;
+      }
+      .test5{
+        position: static;
+          left: 120px;
+      }
+      .test5{
+        position: fixed;
+          left: 120px;
+      }
+      .pagination a{
+        
+            color:red;
+            font-size: 25px;
+            float:left;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .pagination{
+            position: fixed;
+            display: inline-block;
+        }
+
+    </style>
+  </head>
+  <body>
+      <!--Pagination-->
+      <div class="pagination">
+        <a href="">&laquo;</a>
+          <a href="./float.html">float</a>
+          <a href="./Form.html">form</a>
+          <a href="./index.html">index</a>
+          <a href="./TextEffect.html">TextEffect</a>
+          <a href="">&raquo;</a>
+      </div>
+    <h3>Clip</h3>
+    <p class="test1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto
+      porro facere quia dolor asperiores nisi ipsam illo provident. Placeat,
+      fugiat? Incidunt ratione, architecto cum necessitatibus iste nobis
+      reiciendis ut!
+    </p>
+    <h3>Ellipsis</h3>
+    <p class="test2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto
+      porro facere quia dolor asperiores nisi ipsam illo provident. Placeat,
+      fugiat? Incidunt ratione, architecto cum necessitatibus iste nobis
+      reiciendis ut!
+    </p>
+    <h3>Overflow Visible<h3>
+    <p class="test3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto
+      porro facere quia dolor asperiores nisi ipsam illo provident. Placeat,
+      fugiat? Incidunt ratione, architecto cum necessitatibus iste nobis
+      reiciendis ut!
+    </p>
+    <!--Position-->
+    <h5 class="test4">Welocome to DLithe</h5>
+    <h5 class="test5">Welocome to DLithe</h5>
+    <h5 class="test6">Welocome to DLithe</h5>
+    
+      
+  </body>
+</html>
