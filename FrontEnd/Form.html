@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./CSS1.css" />
+    <style>
+      .in {
+        width: 300px;
+      }
+      lable {
+        font-weight: bold;
+        font-size: medium;
+      }
+    </style>
   </head>
   <body>
     <h1>Employee Registration Form</h1>
@@ -14,23 +23,26 @@
         <legend>Employee Registration Form</legend>
 
         <div class="demo"><lable>Name</lable></div>
-        <div class="demo"><input type="text" placeholder="Enter Name" /></div>
+        <div class="demo">
+          <input class="in" type="text" placeholder="Enter Name" />
+        </div>
         <div class="demo"><lable>Phone Number</lable></div>
         <div class="demo">
-          <input type="number" placeholder="Enter Phone No" />
+          <input class="in" type="number" placeholder="Enter Phone No" />
         </div>
         <div class="demo"><lable>Salary</lable></div>
         <div class="demo">
-          <input type="number" placeholder="Enter Salary" />
+          <input class="in" type="number" placeholder="Enter Salary" />
         </div>
         <div class="demo"><lable>Email</lable></div>
         <div class="demo">
-          <input type="email" placeholder="Enter Email" />
+          <input class="in" type="email" placeholder="Enter Email" />
         </div>
         <div class="demo">
           <lable>Gender</lable>
-        </div>
-          <div class="demo"></div><input type="radio" name="gender" id="gender" />Male
+
+          <div class="demo"></div>
+          <input type="radio" name="gender" id="gender" />Male
           <input type="radio" name="gender" id="gender" />Female
         </div>
         <div class="demo"><lable>Department</lable></div>
@@ -43,6 +55,13 @@
             <option>IT</option>
           </select>
         </div>
+        <div class="demo"><lable>Skills</lable></div>
+        <div class="demo">
+          <input calss="in" type="checkbox" />HTML
+          <input calss="in" type="checkbox" />CSS
+          <input calss="in" type="checkbox" />JavaScript
+        </div>
+
         <div class="demo"><lable>Joining Date</lable></div>
         <div class="demo"><input type="date" /></div>
         <div class="demo">
