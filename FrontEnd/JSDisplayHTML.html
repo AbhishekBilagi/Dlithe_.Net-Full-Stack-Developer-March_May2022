@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS_HTML_Displaying</h1>
+
+    <p id="demo1"></p>
+    <br />
+    <p id="demo2"></p>
+    <script>
+      const student = {
+        name: "Vishal",
+        address: "ABC main road Banglore",
+        branch: "IT",
+        city: "Banglore",
+        marks: 65.25,
+      };
+      document.getElementById("demo1").innerHTML =
+        "Student Name is" +
+        student.name +
+        "<br>" +
+        "Address is " +
+        student.address;
+      document.getElementById("demo2").innerHTML =
+        " Branch :" + student.branch + "<br>" + "Marks :" + student.marks;
+    </script>
+  </body>
+</html>
