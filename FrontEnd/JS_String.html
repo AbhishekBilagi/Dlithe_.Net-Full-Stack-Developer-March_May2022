@@ -22,11 +22,20 @@
          document.write("<h3>"+str6.trim()+"</h3>");
          document.write("<h3>"+str6.slice(2,5)+"</h3>");
          var str7="Welcome to JavaScript";
-         document.write("<h3>"+str7.indexOf()+"</h3>");
+         document.write("<h3>"+str7.indexOf("J")+"</h3>");
          document.write("<h3>"+str7.lastIndexOf()+"</h3>");
         
          for(var i=0;i<5;i++)
-            document.write("<h3>"+str7[i]+"</h3>")
+            document.write("<h3>"+str7[i]+"</h3>");
+         
+         for(var a of str7){
+            document.write("<h3>"+a+"</h3>");
+
+         }
+         
+
+
+            
      </script>
   </body>
 </html>
