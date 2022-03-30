@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition And Looping</title>
+</head>
+
+<body>
+    <!--Condition-->
+    <h3 id="greater">
+        <h3>
+            <h3 id="a">
+                <h3>
+
+                    <script>
+                        var num1 = 125;
+                        var num2 = 250;
+                        var num3 = 500;
+                        if (num1 > num2 && num1 > num3) {
+                            document.getElementById("greater").innerHTML = "num1 is greatest";
+                        }
+                        else if (num2 > num3) {
+                            document.getElementById("greater").innerHTML = "num2 is greatest";
+                        }
+                        else {
+                            document.getElementById("greater").innerHTML = "num3 is greatest";
+                        }
+                        var num4 = 600;
+                        var temp = 600;
+                        var num5 = 700;
+                        // nested if
+                        if (num4 == temp) {
+                            if (num4 > num5) {
+                                document.getElementById("a").innerHTML = "num4 is greater";
+                            }
+                            else {
+                                document.getElementById("a").innerHTML = "num5 is greater";
+                            }
+                        }
+
+                        var num6 = 10;
+                        var num7 = 12;
+                        var result = 0;
+
+                        var math = "add";
+                        switch (math) {
+                            case "add": result = num6 + num7
+                                document.write(result + "<br>");
+                                break;
+
+                            case "sub": result = num7 - num6;
+                                document.write(result + "<br>");
+                                break;
+
+                                defult: document.write("defult case <br>");
+                                break;
+
+                        }
+                        //Looping
+                        // for loop
+                        for (var i = 1; i < 50; i++) {
+                            if (i % 2 == 0) {
+                                document.write(i + " ");
+                            }
+                        }
+                        document.write("<br>");
+                        //while loop
+                        var j = 1;
+                        while (j < 50) {
+                            if (j % 2 == 0) {
+                                document.write(j + " ");
+                            }
+                            j++;
+                        }
+                        document.write("<br>");
+                        //do-while loop
+                        var k = 1;
+                        do {
+                            if (k % 2 == 0) {
+                                document.write(k + " ");
+                            }
+                            k++;
+                        } while (k < 50)
+
+                    </script>
+</body>
+
+</html>

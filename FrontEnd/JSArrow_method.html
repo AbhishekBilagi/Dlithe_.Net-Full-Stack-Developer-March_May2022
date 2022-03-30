@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Funtion</title>
+</head>
+
+<body>
+    <script>
+        //normal funtion
+        function normal() {
+            document.write("Normal function <br> <hr>");
+        }
+        normal();
+        //Arrow funtion
+        let arrow = () => document.write("Arrow function <br> <hr>");
+        arrow();
+        //arrow funtion with one parameter
+        let arrowOneArg = (name) => document.write(name + " <br> <hr>");
+        arrowOneArg("Dinga");
+
+        // arrow function with two parameter
+        let add = (num1, num2) => num1 + num2;
+        document.write(add(2, 8) + " <br> <hr>");
+
+        let mul = (a, b) => {
+            var c = a * b;
+            document.write(c + " <br> <hr>");
+        };
+        mul(9, 10);
+
+        //ternary operator
+        var n = 18;
+        let compare = (n > 8) ? () => document.write(" d is big<br> <hr>") : () => document.write("  is big<br> <hr>");
+        compare();
+
+        let k = (s1, s2) => {
+
+            return (s1 > s2) ? document.write("s1 is large") : document.write("s2 is large");
+        }
+        k(6, 8);
+    </script>
+</body>
+
+</html>

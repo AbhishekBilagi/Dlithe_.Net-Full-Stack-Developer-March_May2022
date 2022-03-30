@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            overflow: hidden;
+            background: aliceblue;
+        }
+
+        .nav a {
+            float: left;
+            color: balck;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 16px;
+            width: 100px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav a:hover {
+            color: black;
+            background-color: pink;
+        }
+
+        body {
+
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            text-align: center;
+
+        }
+
+        img {
+            width: 561px;
+            height: 550px;
+            text-align: center;
+            margin-left: 462px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a id="about" onclick="about()">About Us</a>
+        <a id="login" onclick="login()">Login</a>
+        <a id="register" onclick="register()">Register</a>
+        <a id="contact" onclick="contact()">Contact</a>
+    </div>
+
+    <h1>WELCOME TO BIGBANK</h1>
+    <img src="./IMAGE/download (1).jpg" alt="bank">
+    <script>
+
+        function login() {
+            document.getElementById("login").href = "./Login.html";
+            document.getElementById("login").target = "_blank"
+        }
+        function register() {
+            document.getElementById("register").href = "./Register.html";
+            document.getElementById("register").target = "_blank";
+        }
+        contact = () => {
+            document.getElementById("contact").href = "./Contact.html";
+            document.getElementById("contact").target = "_blank"
+
+        }
+        about = () => {
+            document.getElementById("about").href = "./About.html";
+            document.getElementById("about").target = "_blank";
+        }
+    </script>
+</body>
+
+</html>

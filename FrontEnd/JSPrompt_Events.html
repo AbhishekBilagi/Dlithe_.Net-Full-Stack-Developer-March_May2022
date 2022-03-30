@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <button type="button" onclick="add()">Addition</button>
+    <button type="button" onclick="sub()">Subtract</button>
+    <button type="button" onclick="mup()">Multiple</button>
+    <button type="button" onclick="div()">Division</button><br>
+    Num1:<input type="number" id="num1" placeholder="Enter Num1"><br>
+    Num2:<input type="number" id="num2" placeholder="Enter Num2"><br>
+    <h4 id="result"> </h4>
+    <button type="button" onclick="anchor()">Test</button><br><br>
+    <a href="https://en.wikipedia.org/wiki/Dharwad" id="dwd">Dharwad</a><br><br>
+    <button type="button" onclick="submit()">Submit</button><br>
+    <button type="button" onclick="prompt1()">Prompt</button><br>
+    <p id="skill"></p>
+
+
+    <script>
+        function add() {
+
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var result = num1 + num2;
+            document.getElementById("result").innerHTML = "Num1 is " + num1 + "<br> Num2 is " + num2 + "<br>Result is " + result;
+        }
+        function sub() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var result = num1 - num2;
+            document.getElementById("result").innerHTML = "Num1 is " + num1 + "<br> Num2 is " + num2 + "<br>Result is " + result;
+
+        }
+        function mup() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var result = num1 * num2;
+            document.getElementById("result").innerHTML = "Num1 is " + num1 + "<br> Num2 is " + num2 + "<br>Result is " + result;
+
+        }
+        function div() {
+
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var result = num1 / num2;
+            document.getElementById("result").innerHTML = "Num1 is " + num1 + "<br> Num2 is " + num2 + "<br>Result is " + result;
+        }
+
+        function anchor() {
+
+            document.getElementById("dwd").innerHTML = "SDMCET"
+            document.getElementById("dwd").href = "https://www.sdmcet.ac.in/";
+            document.getElementById("dwd").target = "_blank";
+            document.getElementById("dwd").title = "SDMCET"
+        }
+        function submit() {
+
+            var msg = confirm("Do you want to submit?")
+            if (msg) {
+                alert("Form Submitted successfully!!")
+
+            }
+            else {
+                alert("Thank you for staying on this page.")
+            }
+        }
+        function prompt1() {
+
+            var skills = prompt("Please enter your skills");
+            alert("Skills" + skills);
+            document.write("My skills" + skills)
+            document.getElementById("skill").innerHTML = skills;
+        }
+
+    </script>
+
+</body>
+
+</html>
