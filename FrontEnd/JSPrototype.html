@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Normal Funtion wthout prototype
+        function Student() {
+
+            id = 100;
+            name = "Abhi";
+        }
+
+        var s = new Student();
+        s.marks = 60;
+        document.write(s.marks + "<br>");
+
+        var s1 = new Student();
+        document.write(s1.marks + "<br>");
+
+        //funtion with prototype
+        function Customer() {
+            cid = "25580";
+            cname = "Abhishek";
+        }
+        Customer.prototype.cphone = 45682722;
+
+        var c = new Customer();
+        document.write(c.cPhone + "<br>");
+
+        var c1 = new Customer();
+        document.write(c1.cphone + "<br>");
+
+        // adding funtion using prototype
+        Customer.prototype.display = function () {
+
+            document.write("Id is " + cid + " Name is " + cname + "<br>");
+        }
+        c1.display();
+
+        Customer.prototype = { cphone: 125367893 };
+        document.write(c1.cphone);
+
+    </script>
+</body>
+
+</html>

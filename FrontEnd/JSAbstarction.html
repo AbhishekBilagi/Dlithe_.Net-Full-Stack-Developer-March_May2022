@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstraction</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+
+            //abstract class is not allowed to create an object 
+            constructor() {
+
+                if (this.constructor == Student) {
+                    //exception
+                    throw new Error("Object cannot created for abstract class");
+                }
+
+            }
+
+            test() {
+
+            }
+        }
+        //Inheritance
+        class StudentDetails extends Student {
+
+            //overriding 
+            test() {
+                document.write("Student Details")
+            }
+        }
+
+        //var s = new Student();
+
+        var sd = new StudentDetails();
+        sd.test();
+
+        //Abstraction class with prototype
+        function customer() {
+
+            this.id = 200;
+            if (this.constructor == customer) {
+                throw new Error("Object cannot created for abstract class");
+            }
+        }
+
+        customer.prototype.display = function () {
+
+        }
+
+        // var c = new customer();
+        function otherDetails(cid) {
+
+            this.id = cid;
+
+        }
+
+        // Inherited 
+        otherDetails.prototype = Object.create(customer.prototype);
+        var o = new otherDetails(100);
+        document.write(o.id);
+
+
+    </script>
+
+</body>
+
+</html>

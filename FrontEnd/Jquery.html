@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#computer").click(function () {
+                $(".img1").hide();
+            });
+            $("#laptop").click(function () {
+                $(".img2").hide();
+            });
+            $("#computer1").click(function () {
+                $(".img1").show();
+            });
+            $("#laptop1").click(function () {
+                $(".img2").show();
+            });
+            //Toggle
+            $("#toggle").click(function () {
+                $(".img1").toggle();
+            });
+        });
+
+    </script>
+    <img class="img1" src="./Asset/image/computer1.jpg" alt="computer">
+    <img class="img1" src="./Asset/image/computer 2.jpg" alt="computer">
+    <img class="img2" src="./Asset/image/laptop1.jpg" alt="laptop">
+    <img class="img2" src="./Asset/image/laptop 2.jpg" alt="laptop"><br>
+    <button id="computer">Hide Computers</button>
+    <button id="computer1">show Computers</button>
+    <button id="laptop">Hide Laptops</button>
+    <button id="laptop1">show Laptops</button><br>
+    <button id="toggle">Toggle</button>
+    <hr>
+    <script>
+        $(document).ready(function () {
+
+            $("input").focus(function () {
+                $(this).css("background-color", "red");
+            });
+            $("input").blur(function () {
+                $(this).css("background-color", "pink");
+            });
+        });
+    </script>
+    Name:<input type="text"><br>
+    City:<input type="text"><br>
+    <!--Fade toggle-->
+    <script>
+        $(document).ready(function () {
+            $("#fadetoggle").click(function () {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+
+            });
+        });
+    </script>
+    <div id="div1" style="background-color:red; height:80px;width:92px"></div>
+    <div id="div2" style="background-color:yellow; height:80px;width:92px"></div>
+    <div id="div3" style="background-color:violet; height:80px;width:92px"></div>
+    <button id="fadetoggle">Fade Toggle</button>
+</body>
+
+</html>

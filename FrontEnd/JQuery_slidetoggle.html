@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideToggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #img {
+            width: 250px;
+            height: 250px;
+            margin-top: 46px;
+            margin-left: 60px;
+            float: left;
+        }
+
+        #div1 {
+            background-color: gray;
+            width: 400px;
+            height: 600px;
+
+        }
+
+        #slideToggle {
+            width: 100px;
+
+        }
+
+        #img1 {
+
+            width: 250px;
+            height: 250px;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Slide-Toggle with callback function</h1>
+    <script>
+        $("document").ready(function () {
+            $("#slideToggle").click(function () {
+                $("#img").slideToggle(3000, function () {
+                    $("#img1").slideToggle(3000, function () {
+                        alert("Click Slide button for slide up and slide down....")
+                    }
+                    );
+                });
+            });
+        });
+    </script>
+    <div id="div1">
+        <button id="slideToggle">Slide</button>
+        <img id="img" src="./Asset/image/karnataka-university-dharwad-1024x576.jpg" alt="KUD"><br>
+        <img id="img1" src="./Asset/image/download.jpg" alt="SDM">
+    </div><br>
+
+    <script>
+        $(document).ready(function () {
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "red");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "gray");
+                },
+                click: function () {
+                    $(this).css("background-color", "blue");
+                }
+            });
+        });
+    </script>
+    <h1>Using On Method</h1>
+    <p>Hello welcome.</p>
+</body>
+
+</html>

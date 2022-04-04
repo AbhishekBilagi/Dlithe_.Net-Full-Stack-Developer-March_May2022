@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQAnimation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #img1 {
+            height: 125px;
+            width: 125px;
+            margin-left: 5px;
+            position: relative;
+
+        }
+
+        p {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                //var img = $("#img1");
+                $("#img1").animate({ left: '250px' }, "slow");
+                $("#img1").animate({ height: '250px', }, "slow");
+                $("#img1").animate({ width: '250px' }, "slow");
+                $("p").animate({ fontSize: '150px', backgroundcolor: 'red' }, "slow");
+                $("p").animate({ left: '400px' }, "slow");
+                $("#img1").slideUp();
+                $("p").fadeOut();
+            });
+        });
+    </script>
+
+    <img id="img1" src="./Asset/image/download.jpg" alt="">
+
+    <p>SDMCET
+    <p>
+        <br>
+
+        <button id="button">Animate</button>
+
+</body>
+
+</html>

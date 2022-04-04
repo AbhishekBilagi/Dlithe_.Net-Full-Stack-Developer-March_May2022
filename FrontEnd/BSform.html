@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <title>BSForm</title>
+    <style>
+        .form-control {
+            width: 350px;
+
+        }
+
+        .alert {
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        /* function validation() {
+             var name = document.getElementById("name").value;
+             var email = document.getElementById("email").value;
+             var city = document.getElementById("city").value;
+ 
+ 
+             if (name == "") {
+                 alert("Please Enter Name");
+ 
+             }
+             else if (email == "") {
+                 alert("Please Enter Email");
+             }
+             else if (city == "") {
+                 alert("Please Enter City");
+ 
+             }
+ 
+         }*/
+        function validation() {
+            $(document).ready(function () {
+                // var name = document.getElementById("name").value;
+                var email = $("#email").val();
+                var city = $("#city").val();
+                var name = $("#name").val();
+
+                if (name == "") {
+                    $(document).ready(function () {
+                        $("#submit").click(function () {
+                            $("#myalert").show();
+                            document.getElementById("p").innerHTML = "Please Enter Name"
+                            setTimeout(function () {
+                                $("#myalert").hide();
+                            }, 2000);
+
+                        });
+                    });
+
+
+                }
+                else if (email == "") {
+
+                    $("#submit").click(function () {
+                        $("#myalert").show();
+                        document.getElementById("p").innerHTML = "Please Enter Email"
+                        setTimeout(function () {
+                            $("#myalert").hide();
+                        }, 2000);
+                    }
+                    );
+
+
+                }
+                else if (city == "") {
+
+                    $("#submit").click(function () {
+                        $("#myalert").show();
+                        document.getElementById("p").innerHTML = "Please Enter city"
+                        setTimeout(function () {
+                            $("#myalert").hide();
+                        }, 2000);
+                    }
+                    );
+
+
+                }
+
+
+            });
+        }
+
+    </script>
+
+    <div id="myalert" class="alert alert-warning collapse">
+        <button id="close" type="button" class="close">×</button>
+        <p id="p"></p>
+    </div>
+
+
+    <div class="container">
+        <form role="form" action="" method="GET">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="name" name="name" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label>City:</label>
+                <input type="text" name="city" class="form-control" id="city" placeholder="Enter City">
+            </div>
+            <button id="submit" type="button" class="btn btn-success" onclick="validation()">Submit</button>
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
