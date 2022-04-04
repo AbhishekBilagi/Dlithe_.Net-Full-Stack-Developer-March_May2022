@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymorphism</title>
+</head>
+
+<body>
+    <script>
+        function Demo() {
+            //OverLoading
+            if (arguments.length == 0) {
+                var a = 1;
+                a = a + a;
+                document.write(a + "<br><hr>");
+            }
+            else if (arguments.length == 2) {
+                var num1 = 25;
+                var num2 = 54;
+                var num3 = 25 * 54;
+                document.write(num3 + "<br><hr>");
+            }
+            else if (arguments.length == 3) {
+                var sum = 0;
+                for (var i = 0; i < 10; i++) {
+                    sum += i;
+
+                }
+                document.write(sum);
+            }
+        }
+        Demo();
+        Demo(1, 2);
+        Demo(1, 2, 3);
+
+
+    </script>
+</body>
+
+</html>
