@@ -16,7 +16,19 @@
 
         }
 
-        .alert {
+        #myalert {
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        #myalert1 {
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        #myalert2 {
             position: relative;
             margin-top: 0px;
             margin-left: 0px;
@@ -50,7 +62,7 @@
              }
  
          }*/
-        function validation() {
+        /*function validation() {
             $(document).ready(function () {
                 // var name = document.getElementById("name").value;
                 var email = $("#email").val();
@@ -100,13 +112,46 @@
 
 
             });
-        }
+        }*/
 
+        $(document).ready(function () {
+            $("#name").focus(function () {
+                $("#myalert").show();
+            });
+
+
+            setTimeout(function () {
+                $("#myalert").hide();
+            }, 3000);
+            $("#email").focus(function () {
+                $("#myalert1").show();
+            });
+
+            setTimeout(function () {
+                $("#myalert1").hide();
+            }, 3000);
+            $("#city").focus(function () {
+                $("#myalert2").show();
+            });
+
+            setTimeout(function () {
+                $("#myalert2").hide();
+            }, 3000);
+
+        });
     </script>
 
     <div id="myalert" class="alert alert-warning collapse">
-        <button id="close" type="button" class="close">×</button>
-        <p id="p"></p>
+        <button id="close" type="button" data-dismiss="alert" class="close">×</button>
+        <p>Please Enter Name</p>
+    </div>
+    <div id="myalert1" class="alert alert-warning collapse">
+        <button id="close1" type="button" data-dismiss="alert" class="close">×</button>
+        <p>Please Enter Email</p>
+    </div>
+    <div id="myalert2" class="alert alert-warning collapse">
+        <button id="close2" type="button" data-dismiss="alert" class="close">×</button>
+        <p>Please Enter City</p>
     </div>
 
 
@@ -118,7 +163,7 @@
             </div>
             <div class="form-group">
                 <label>Email:</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="Enter Name">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
             </div>
             <div class="form-group">
                 <label>City:</label>
