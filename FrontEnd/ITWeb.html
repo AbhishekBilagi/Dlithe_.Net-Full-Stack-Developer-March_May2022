@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://code.jquery.com/ui/1.13.1/dark-hive/sunny/jquery-ui.css" rel="stylesheet">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--accordion-->
+    <link href="https://code.jquery.com/ui/1.10.4/themes/sunny/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>IT</title>
@@ -16,7 +19,7 @@
 
         $(document).ready(function () {
             $("#accordion").accordion({
-                collapsible: true
+                collapsible: true;
             });
         });
 
@@ -52,6 +55,10 @@
 
         .b {
             padding: 5px;
+        }
+
+        .card img {
+            margin-left: 34px;
         }
     </style>
 
@@ -186,15 +193,25 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-4" style="background-color:rgb(12, 12, 134);">.col-sm-4</div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <img src="./Asset/image/HealthCare.jpg" alt="" S>
+                        <p class="card-text">We help global healthcare and life sciences enterprises to reimagine their
+                            business processes and deliver remarkable patient experiences. With strong industry and
+                            business-process know-how coupled with expertise in technology, we constantly strive to
+                            develop innovative solutions that transform the business practices of our customers.</p>
 
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-4" style="background-color:rgb(133, 37, 69);">.col-sm-4</div>
             <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
         </div>
     </div>
 
     </div>
-
 
 
 </body>
