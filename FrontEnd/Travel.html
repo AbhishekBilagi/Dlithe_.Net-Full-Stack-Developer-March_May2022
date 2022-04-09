@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Travel</title>
+</head>
 <style>
     .container {
         margin-top: 79px;
@@ -18,52 +42,55 @@
     #c1 {
         text-align: center;
         width: 621px;
+    }
+
+    .card img {
+        height: 25px;
+        width: 25px;
+
+    }
+
+    .footer a {
+        color: black;
 
     }
 </style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <!--animation-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Travel</title>
-</head>
-
 <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Travel.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Guids</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Flights</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Visited Places">Visited Places</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Dream to visit">Dream to visit</a>
+                </li>
+
             </ul>
+            <button type="button"
+                style="margin-left:607px ;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">Contact
+                Us</button>
         </div>
     </nav>
+    <!--Home-->
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
@@ -77,7 +104,11 @@
                     leaves marks on your memory, on your consciousness, on your heart, and on your body. You take
                     something
                     with you. Hopefully, you leave something good behind</p>
+                <button style="margin-bottom:30px ;background-color:rgb(32, 26, 26);" type="button"
+                    class="btn btn-success">Reserve
+                    Ticket</button>
             </div>
+
             <div class="col-sm-7"><img class="animated bounceInRight" style="animation-delay:2s;"
                     src="./Asset/TravelIMG/img8.jpg" alt="">
             </div>
@@ -86,23 +117,534 @@
     </div>
     <div style="background-color:rgb(32, 26, 26)">
         <div id="c1" class="container">
+
             <p
                 style="font-weight:bold;color:aliceblue; padding-top: 15px; font-size: 73px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
                 Create a memory to remember
             </p><br>
             <p style="color: aliceblue;">No matter how big or small a trip, travel can create long-lasting memories. All
-                of those experiences –
-                and
+                of and
                 they memories they create – also help shape your personality, according to new research
             <p>
                 <button style="margin-bottom:30px ;" type="button" class="btn btn-success">My Travel Logs</button><br>
         </div>
     </div>
+    <!--Visted Places-->
+    <div class="container" id="Visited Places">
+        <h1 style="margin-bottom: 30px;">Visited Places</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Goa</h4>
+                        <img src="./Asset/TravelIMG/Goa.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Goa is one of the most favorite destination among Indian tourists due to
+                            its pristine beaches. Dotted with hundreds of impressive beaches in Goa, the incredible
+                            coastline of more than 100 km offers beautiful views and serenity where tourists enjoy and
+                            relax in the Sun.Goan food is considered incomplete without fish, Rice and fish-curry is the
+                            staple of most Goans.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Mysore</h4>
+                        <img src="./Asset/TravelIMG/Mysore.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Mysore is a heritage city and pride of Karnataka. It is a beautiful city
+                            rich with history, legends, monuments, educational centers, kings, palaces, museums, lakes,
+                            parks, culture, literature, arts and abundant natural resources.Mysore is also known as the
+                            “Garden City” or the “City of Palaces” and has also earned the nickname “Ashtanga City" </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Dandeli</h4>
+                        <img src="./Asset/TravelIMG/Dandeli.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Dandeli is a natural habitat for wildlife, including tigers, leopards,
+                            black panthers, elephants, gaur, deer, antelopes, and bears. It is the second largest
+                            wildlife sanctuary in Karnataka and was designated as a tiger reserve in 2007.Though, the
+                            climate remains pleasant all through the year but the best time to visit Dandeli is from
+                            October to May.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6" style="background-color:aqua; text-align: center;">
-                welcome
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Madikeri</h4>
+                        <img src="./Asset/TravelIMG/madikeri.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Madikeri is known for greenery, hills, weather and coffee plantations. One
+                            of the most famous Madkeri tourist places are the coffee plantations near the city. A stroll
+                            through the plantations will fill you with the fresh and enticing aroma of coffee and will
+                            turn a regular day into an extraordinary one.Madikeri, also called Mercara, town, southern
+                            Karnataka state, southern India.</p>
+
+                    </div>
+                </div>
             </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Udupi</h4>
+                        <img src="./Asset/TravelIMG/Udupi.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Udupi is one of the top tourist attractions in Karnataka and has various
+                            educational institutions. It is notable for the Krishna Temple and is also known as the
+                            temple city. It also lends its name to the popular Udupi cuisine, is also known as Lord
+                            Parashurama Kshetra, and is famous for Kanakana kindi.Udupi is one of the best Places and
+                            it's famous for beaches in south India. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Chikmagalur</h4>
+                        <img src="./Asset/TravelIMG/Chikmangalur.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Chikmagalur is a beautiful district situated on the western part of
+                            Karnataka. It is mostly popular for its coffee plantations and a pleasant climate. Another
+                            renowned attraction that Chikmagalur is known for is its Bababudan Giri ranges.Chikmagalur
+                            (Chikkamagaluru) is popularly known as Coffee Land of Karnatakaa chaming hill station of
+                            Karnataka attracts many Trekkers,explorers and nature lovers through out
+                            the year</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Dream to visit-->
+    <div class="container" id="Dream to visit">
+        <h1 style="margin-bottom: 30px;">Dream to visit</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Himachal Pradesh</h4>
+                        <img src="./Asset/TravelIMG/Himachal pradesh.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">This is popularly renowned for its Himalayan landscapes and popular
+                            hill-stations. Many outdoor activities such as rock climbing, mountain biking, paragliding,
+                            ice-skating, trekking, rafting, and heli-skiing are popular tourist attractions in Himachal
+                            Pradesh.February to June (Spring and Summer) is the best time to visit Himachal. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Pondicherry</h4>
+                        <img src="./Asset/TravelIMG/Pondicherry.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">For seekers of spirituality, Pondicherry is known for Aurobindo Ashram and
+                            Auroville attracting thousands of tourists to explore this beautiful city. For nature lovers
+                            too, Pondicherry is a serene retreat replete with various beaches and lakes that takes the
+                            breath away of the tourists on the first glimpse. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Kerala</h4>
+                        <img src="./Asset/TravelIMG/Kerala.jpg " alt="" style=" height:178px;width: 306px;">
+                        <p class="card-text">Named as one of the ten paradises of the world by National Geographic
+                            Traveler, Kerala is famous especially for its ecotourism initiatives and beautiful
+                            backwaters. Its unique culture and traditions, coupled with its varied demography, have made
+                            Kerala one of the most popular tourist destinations in the world.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">New York</h4>
+                        <img src="./Asset/TravelIMG/NewYork.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">New York is a city of diversity and dynamism. It is also a city of
+                            politics, economy and culture. It is even described as the economic and cultural capital of
+                            the world, and New York City is one of the most populous cities in the United States.New
+                            York is not only the most famous city in the world but also, arguably, the best for
+                            tourists, thanks to its diverse culture and myriad of entertainment options.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Thailand</h4>
+                        <img src="./Asset/TravelIMG/Pondicherry.jpg" alt="" style="height:178px;width: 306px;">
+                        <p class="card-text">Thailand is the only Southeast Asian country never to have been colonized
+                            by a European power. It is known for its beautiful nature, delicious mangoes and strict
+                            rules about conversations on its monarchy.The food, the prices, the incredible hotels, cheap
+                            hostels, beautiful islands, the ease of getting around – any and all could be responsible
+                            for why Thailand is so popular, and why last year over 38 million people visited.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body"
+                        style="height: 526px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                        <h4 class="card-title">Dubai</h4>
+                        <img src="./Asset/TravelIMG/Bankok.jpg" alt="" style=" height:178px;width: 306px;">
+                        <p class="card-text">Dubai, also spelled Dubayy, city and capital of the emirate of Dubai, one
+                            of the wealthiest of the seven emirates that constitute the federation of the United Arab
+                            Emirates, which was created in 1971 following independence from Great Britain.Dubai city is
+                            the capital of Dubai Emirate, an absolute monarchy and one of the seven emirates which
+                            constitute the UAE.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Dream Place-->
+    <div style="background-color:rgb(32, 26, 26)">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 style="color:white;padding-top: 20px;">Himachal Pradesh</h1>
+                    <p style="color:white;">Himachal Pradesh, India’s snow-laden province, is the 21st largest state in
+                        India and there
+                        are records to show that this hilly region has been inhabited since pre-historic times. All
+                        through its history, the region has been ruled by local kings and empires.<br><br>The town is
+                        famous
+                        for
+                        pleasant walking experiences on hillsides surrounded by pine and oak forests. This capital city
+                        of
+                        Himachal Pradesh is famous for The Mall, ridge, and toy train. With colonial style buildings,
+                        the
+                        town has relics of ancient past that lend it a distinct look.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="./Asset/TravelIMG/Shimla.jpg" alt=""
+                        style="height: 308px;width:432px;margin-top: 25px;margin-bottom: 25px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!--Customer Information-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1 style="font-weight: bold; font-size: 62px;"> Lorem ipsum dolor sit amet consectetur</h1>
+                <hr style="font-weight:bold">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae
+                    <span class="glyphicon glyphicon-plus" style="float: right;"></span>
+                </p>
+
+                <hr style="font-weight:bold">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae<span
+                        class="glyphicon glyphicon-plus" style="float: right;"></span></p>
+
+                <hr style="font-weight:bold">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae <span
+                        class="glyphicon glyphicon-plus" style="float: right;"></span></p>
+
+                <hr style="font-weight:bold">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae<span
+                        class="glyphicon glyphicon-plus" style="float: right;"></span></p>
+
+                <hr style="font-weight:bold">
+            </div>
+
+            <div class="col-sm-5">
+                <img src="./Asset/TravelIMG/img 5.jpg" alt="" style="width: 445px;height: 425px;">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="container">
+                <h1
+                    style="text-align: center;font-weight: bold;font-size: 78px;margin-left: 228px;margin-right: 228px;">
+                    Here's what they have to say...</h1>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="Card">
+                                <div class="card-body"
+                                    style="height: 406px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+
+                                    <img src="./Asset/TravelIMG/user.png" alt=""
+                                        style="height:203px;width: 197px; margin-left: 60px;">
+                                    <h4 class="card-title" style="text-align: center;">Customer Name</h4>
+                                    <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit.
+                                        Laudantium voluptatem fugiat ullam optio. Odio maiores possimus impedit optio
+                                        placeat distinctio, numquam quas quasi ab vero laudantium ea animi soluta
+                                        similique.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="Card">
+                                <div class="card-body"
+                                    style="height: 406px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+
+                                    <img src="./Asset/TravelIMG/user.png" alt=""
+                                        style="height:203px;width: 197px; margin-left: 60px;">
+                                    <h4 class="card-title" style="text-align: center;">Customer Name</h4>
+                                    <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit.
+                                        Laudantium voluptatem fugiat ullam optio. Odio maiores possimus impedit optio
+                                        placeat distinctio, numquam quas quasi ab vero laudantium ea animi soluta
+                                        similique.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="Card">
+                                <div class="card-body"
+                                    style="height: 406px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+
+                                    <img src="./Asset/TravelIMG/user.png" alt=""
+                                        style="height:203px;width: 197px; margin-left: 60px;">
+                                    <h4 class="card-title" style="text-align: center;">Customer Name</h4>
+                                    <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit.
+                                        Laudantium voluptatem fugiat ullam optio. Odio maiores possimus impedit optio
+                                        placeat distinctio, numquam quas quasi ab vero laudantium ea animi soluta
+                                        similique.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="Card">
+                                <div class="card-body"
+                                    style="height: 406px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+
+                                    <img src="./Asset/TravelIMG/user.png" alt=""
+                                        style="height:203px;width: 197px; margin-left: 60px;">
+                                    <h4 class="card-title" style="text-align: center;">Customer Name</h4>
+                                    <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit.
+                                        Laudantium voluptatem fugiat ullam optio. Odio maiores possimus impedit optio
+                                        placeat distinctio, numquam quas quasi ab vero laudantium ea animi soluta
+                                        similique.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="Card">
+                                <div class="card-body"
+                                    style="height: 406px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+
+                                    <img src="./Asset/TravelIMG/user.png" alt=""
+                                        style="height:203px;width: 197px; margin-left: 60px;">
+                                    <h4 class="card-title" style="text-align: center;">Customer Name</h4>
+                                    <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit.
+                                        Laudantium voluptatem fugiat ullam optio. Odio maiores possimus impedit optio
+                                        placeat distinctio, numquam quas quasi ab vero laudantium ea animi soluta
+                                        similique.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="Card">
+                                <div class="card-body"
+                                    style="height: 406px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+
+                                    <img src="./Asset/TravelIMG/user.png" alt=""
+                                        style="height:203px;width: 197px; margin-left: 60px;">
+                                    <h4 class="card-title" style="text-align: center;">Customer Name</h4>
+                                    <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit.
+                                        Laudantium voluptatem fugiat ullam optio. Odio maiores possimus impedit optio
+                                        placeat distinctio, numquam quas quasi ab vero laudantium ea animi soluta
+                                        similique.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                    style="background-color: black; margin-top: 254px;"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                    style="background-color: black; margin-top: 254px;"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--Form part-->
+    <div class="container" style="margin-top:84px">
+        <div class="row">
+            <div class="col-sm-6">
+                <form role="form" action="" method="GET">
+                    <h1 style="text-align: center; font-weight: bold;font-size: 81px;margin-bottom: 35px;">Be updated!
+                    </h1>
+                    <div class="form-group" style="margin-left: 40px;margin-right: 40px;">
+
+                        <input type="name" name="name" class="form-control" id="name" placeholder="First name*"
+                            style="border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                    </div>
+                    <div class="form-group" style="margin-left: 40px;margin-right: 40px;">
+
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Last name*"
+                            style="border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                    </div>
+                    <div class="form-group" style="margin-left: 40px;margin-right: 40px;">
+
+                        <input type="text" name="city" class="form-control" id="city" placeholder="Email subject*"
+                            style="border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">
+                    </div>
+                    <div class="form-group" style="margin-left: 40px;margin-right: 40px;">
+
+                        <textarea type="text" name="city" class="form-control" id="city"
+                            placeholder="Write something here..*"
+                            style="height:140px;border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;"></textarea>
+                    </div>
+                    <button id="submit" type="button" class="btn btn-success"
+                        style="margin-left: 40px;margin-right: 40px;margin-top:40px;width: 463px; background-color: rgb(32, 26, 26);border:1px solid;padding:10px;box-shadow: 5px 10px 8px #888888;">Submit
+                        Email</button>
+
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <img src="./Asset/TravelIMG/img 5.jpg" alt="" style="width: 532px;height: 533px;">
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer" style="background-color: gray;">
+        <div class="container">
+            <footer class=" page-footer font-small dark pt-4">
+
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-sm-4">
+
+                            <!-- Content -->
+                            <h5 style="text-align: center; font-weight: bold;font-size: 50px;margin-top: 8px;">My Log
+                                Travels</h5>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-sm-4" style="text-align:center;">
+
+                            <!-- Links -->
+                            <h5 style="color:black">Quick Links</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#!">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#!">My travel logs</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Travels</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-sm-4" style="text-align: center;">
+
+                            <!-- Links -->
+
+                            <ul class="list-unstyled" style="margin-top: 28px;">
+                                <li>
+                                    <a href="#!">Promo flight</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Guids</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3" style="color:black">2021-2022 My log Travels.All
+                    Right Reserved</div>
+            </footer>
         </div>
     </div>
 </body>
